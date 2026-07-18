@@ -1,0 +1,257 @@
+```css
+/* =========================
+   RESETEO GENERAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f4f8;
+  color: #1f2937;
+}
+
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+   Usamos Grid para centrar
+========================= */
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  display: grid;
+  place-items: center;
+}
+
+
+/* =========================
+   TARJETA PRINCIPAL
+   Grid organiza las secciones
+========================= */
+
+.tarjeta {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #d7dce3;
+  border-radius: 14px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+.etiqueta {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.tarjeta > p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FORMULARIO
+   Grid organiza label,
+   textarea y acciones
+========================= */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 14px;
+
+  border: 1px solid #aeb7c4;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: 2px solid #1f2937;
+  outline-offset: 2px;
+}
+
+
+/* =========================
+   ACCIONES
+   Flexbox acomoda contador
+   y botón en una fila
+========================= */
+
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+#contador {
+  font-size: 0.9rem;
+  color: #5f6875;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #1f2937;
+  color: white;
+
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   RESULTADO
+   Grid organiza título
+   y respuesta
+========================= */
+
+.resultado {
+  padding-top: 20px;
+  border-top: 1px solid #d7dce3;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.resultado h2 {
+  margin: 0;
+}
+
+pre {
+  min-height: 150px;
+  margin: 0;
+  padding: 18px;
+
+  background-color: #f7f8fa;
+  border-radius: 8px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   RESPONSIVE PARA TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .contenedor {
+    width: 92%;
+    padding: 25px 0;
+  }
+
+  .tarjeta {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE PARA MÓVIL
+========================= */
+
+@media (max-width: 500px) {
+  .contenedor {
+    width: 94%;
+    padding: 15px 0;
+  }
+
+  .tarjeta {
+    padding: 18px;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    min-height: 160px;
+  }
+
+  .acciones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #contador {
+    text-align: right;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  pre {
+    padding: 14px;
+  }
+}
+```

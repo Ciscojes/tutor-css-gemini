@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutor de CSS con Gemini</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="contenedor">
+      <section class="tarjeta">
+        <p class="etiqueta">Ejercicio con Google AI Studio</p>
+        <h1>Tutor de CSS con Gemini</h1>
+        <p>
+          Escribe una pregunta, pega código CSS o solicita una explicación.
+        </p>
+
+        <form id="formulario">
+          <label for="pregunta">Tu pregunta</label>
+
+          <textarea
+            id="pregunta"
+            name="pregunta"
+            rows="8"
+            maxlength="3000"
+            placeholder="Ejemplo: ¿Cuál es la diferencia entre justify-content y align-items?"
+            required
+          ></textarea>
+
+          <div class="acciones">
+            <span id="contador">0 / 3000</span>
+            <button id="boton" type="submit">Analizar con Gemini</button>
+          </div>
+        </form>
+
+        <section class="resultado" aria-live="polite">
+          <h2>Respuesta</h2>
+          <pre id="respuesta">La respuesta aparecerá aquí.</pre>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
