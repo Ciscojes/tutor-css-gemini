@@ -1,7 +1,6 @@
-```css
-/* =========================
+/* 
    RESETEO GENERAL
-========================= */
+*/
 
 * {
   box-sizing: border-box;
@@ -15,11 +14,10 @@ body {
   color: #1f2937;
 }
 
-
-/* =========================
+/* 
    CONTENEDOR PRINCIPAL
    Usamos Grid para centrar
-========================= */
+ */
 
 .contenedor {
   width: 90%;
@@ -32,11 +30,10 @@ body {
   place-items: center;
 }
 
-
-/* =========================
+/* 
    TARJETA PRINCIPAL
    Grid organiza las secciones
-========================= */
+ */
 
 .tarjeta {
   width: 100%;
@@ -50,10 +47,9 @@ body {
   gap: 20px;
 }
 
-
-/* =========================
+/* 
    TEXTOS
-========================= */
+*/
 
 .etiqueta {
   margin: 0;
@@ -72,12 +68,11 @@ h1 {
   line-height: 1.6;
 }
 
-
-/* =========================
+/* 
    FORMULARIO
    Grid organiza label,
    textarea y acciones
-========================= */
+ */
 
 form {
   display: grid;
@@ -109,12 +104,11 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-
-/* =========================
+/* 
    ACCIONES
    Flexbox acomoda contador
    y botón en una fila
-========================= */
+ */
 
 .acciones {
   display: flex;
@@ -128,10 +122,9 @@ textarea:focus {
   color: #5f6875;
 }
 
-
-/* =========================
+/* 
    BOTÓN
-========================= */
+*/
 
 button {
   padding: 12px 20px;
@@ -158,12 +151,11 @@ button:disabled {
   cursor: not-allowed;
 }
 
-
-/* =========================
+/* 
    RESULTADO
    Grid organiza título
    y respuesta
-========================= */
+*/
 
 .resultado {
   padding-top: 20px;
@@ -193,10 +185,9 @@ pre {
   overflow-wrap: anywhere;
 }
 
-
-/* =========================
+/*
    RESPONSIVE PARA TABLET
-========================= */
+ */
 
 @media (max-width: 768px) {
   .contenedor {
@@ -213,10 +204,9 @@ pre {
   }
 }
 
-
-/* =========================
+/* 
    RESPONSIVE PARA MÓVIL
-========================= */
+ */
 
 @media (max-width: 500px) {
   .contenedor {
@@ -254,4 +244,3 @@ pre {
     padding: 14px;
   }
 }
-```
